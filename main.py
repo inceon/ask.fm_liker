@@ -1,11 +1,12 @@
 import requests
+import yaml
+import sys
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from datetime import datetime
 from random import *
 from pprint import pprint
 from time import sleep
-import yaml
 
 indexPage = 'https://ask.fm/'
 TL = 80
