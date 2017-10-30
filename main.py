@@ -2,6 +2,7 @@ import requests
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from datetime import datetime
+from random import *
 from pprint import pprint
 from time import sleep
 import yaml
@@ -26,7 +27,7 @@ def get_users_on_index():
 
 # pprint(indexPage + users[0])
 # Open browser
-browser = webdriver.Chrome()
+browser = webdriver.PhantomJS()
 
 stream = open('cookie.data', 'r')
 cookie = yaml.load(stream)
